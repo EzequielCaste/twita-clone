@@ -1,0 +1,28 @@
+{
+  "name": "clona-tw",
+  "version": "1.0.0",
+  "description": "Twitter Clone",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "devStart": "node index.js"
+  },
+  "keywords": [
+    "twitter"
+  ],
+  "author": "Ezequiel Castellanos",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "bcrypt": "^4.0.1",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

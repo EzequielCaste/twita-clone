@@ -1,0 +1,41 @@
+<%- include ("./partials/header.ejs") %>
+<nav>
+  <ul>  
+    <li>
+      <a href="/tweet/compose">New</a>
+    </li>  
+    <li>
+      <a class="disabled" href="#" tabindex="-1" aria-disabled="true"><%= user.username %></a>
+    </li>
+    <li>
+      <a href="/">Logout</a>
+    </li>
+  </ul>
+</nav>
+
+
+<h1>Home Page</h1>
+
+<p>
+    - 
+</p>
+
+<section id="main-feed">          
+  <h2>Tweet Feed</h2>
+  
+  <% user.tweets.forEach(tweet => { %> 
+   <article>
+     <h3>
+       <i class="fas fa-user-circle"></i> 
+       <%= tweet.author.username %></h3>        
+     <p><%= tweet.text %></p>
+     <%= setDateFormat(tweet.created)%>    
+     <span><a href="/tweet/<%= tweet._id %> ">delete</a></span>  
+   </article>      
+   <% }) %> 
+   
+  
+ </section>
+
+<%- include ("./partials/footer.ejs") %>
+	

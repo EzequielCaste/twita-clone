@@ -1,0 +1,16 @@
+<%- include ("../partials/header.ejs") %>
+
+<section id="compose">
+  <h2>Compose</h2>
+  <form action="/tweet/compose" method="POST">
+    <div class="form-group">
+      <label for="tweetText">Max length 150 characters </label>
+      <textarea maxlength="150" class="form-control" name="tweetText" id="tweetText"></textarea>
+    </div>
+    <button class="btn btn-primary" type="submit">Tweet</button>
+  </form>
+</section>
+
+
+
+<%- include ("../partials/footer.ejs") %>

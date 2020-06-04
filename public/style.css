@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --bg-light: #F7F7F9;
+  --main-color: rgb(0, 75, 95); 
+}
+
+body{
+  font-size: 0.9em;
+  font-family: 'Poppins', sans-serif;
+}
+main {
+  margin-bottom: 2em;
+}
+.container {
+  max-width: 15em;
+  margin: 0 auto;
+  text-align: center;
+}
+.container p {
+  line-height: 1.4em;
+}
+
+.btn {
+  max-width: 7em;
+  display: block;
+  margin: 1.5em auto;
+  text-decoration: none;
+  color: black;
+  padding: 0.4em;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 2px 2px black;
+}
+.btn:hover {
+  cursor: pointer;
+}
+#main-feed {
+  width: 100%;
+  margin: auto;
+  overflow: auto;
+}
+article {
+  margin-bottom: 3em;
+}
+article h3 i {
+  font-size: 2em;
+  color: var(--main-color)
+}
+article h3, article p  {
+  text-align: left;
+}
+
+#login {
+  width: 100%;
+  margin: 1em auto;
+}
+.form-group {
+  padding: 1em;
+}
+.form-group input {
+ width: 100%;
+}
+.form-group textarea {
+  margin-top: 1em;
+  height: 5em;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+.disabled {
+  color: gray;
+}
+footer {
+  margin-top: 2em;
+}
+footer a { 
+    background-color: rgb(207, 231, 238);
+    color: black;
+    text-decoration: none;
+    padding: 0.4em;
+}
+
+@media (min-width: 450px) {
+  .btn {
+    display: inline-block;
+    margin: 2em 1em;
+  }
+}
