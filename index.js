@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const User = require('./models/users');
 const Tweet = require('./models/tweet')
 const session = require('express-session');
+require('dotenv').config();
 
 //CONNECT TO DB
 mongoose.connect(process.env.MONGODB_URL, {  useUnifiedTopology: true, useNewUrlParser: true, useFindAndModify: false });
@@ -39,8 +40,7 @@ app.get('/', async (req, res) => {
       var dateB = new Date(b.created);
       return dateB - dateA;
   })
-  
-    
+   
    res.render("index", {feed: feed})
   
   // Tweet.find({}).populate('author').exec(function(err, tweets) {
